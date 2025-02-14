@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" >
 
 <head>
   <meta charset="UTF-8" />
@@ -8,21 +8,45 @@
   <title>Cook.io - Cooking made easy.</title>
   <meta name="title" content="Cook.io - Cooking made easy.">
   <meta name="description" content="This is a recipe application made by Diego Vilhalva">
-  <script src="./src/assets/js/theme.js"></script>
+  <script src="./src/assets/js/theme.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap"
     rel="stylesheet">
 
-    <link rel="stylesheet"
-href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0" />
-<link rel="stylesheet" href="./src/assets/css/style.css">
-<script type="module" src="./src/assets/js/global.js"></script>
-<script type="module" src="./src/assets/js/home.js"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0" />
+  <link rel="stylesheet" href="./src/assets/css/style.css">
+  <script type="module" src="./src/assets/js/global.js"></script>
+  <script type="module" src="./src/assets/js/home.js"></script>
 </head>
 
 <body>
- 
+  <header class="header" data-header>
+    <a href="/" class="logo">
+      <img src="./src/assets/images/logo-light.svg" width="156" height="32" alt="Cook.io" class="logo-light">
+      <img src="./src/assets/images/logo-dark.svg" width="156" height="32" alt="Cook.io" class="logo-dark">
+    </a>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li>
+          <a href="/" class="navbar-link title-small has-state active">Home</a>
+        </li>
+        <li>
+          <a href="./recipes.html" class="navbar-link title-small has-state active">Recipes</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="icon-btn theme-switch has-state" aria-pressed="false" aria-label="Toogle light and dark theme"
+      data-theme-btn>
+      <span class="material-symbols-outlined light-icon" aria-hidden="true">light_mode</span>
+      <span class="material-symbols-outlined dark-icon" aria-hidden="true">dark_mode</span>
+    </button>
+    <a href="./saved-recipes.html" class="btn btn-primary has-icon">
+      <span class="material-symbols-outlined" aria-hidden="true">book</span>
+      <span class="span"> Saved Recipes</span>
+    </a>
+  </header>
 </body>
 
 </html>
