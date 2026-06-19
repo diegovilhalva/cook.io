@@ -1,5 +1,3 @@
-
-
 "use strict";
 
 const $HTML = document.documentElement
