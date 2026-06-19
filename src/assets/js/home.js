@@ -166,7 +166,7 @@ addTabContent($lastActiveTabBtn, $lastActiveTabPanel);
  * Fetch data for slider card
  */
 
-let /** {Array} */ cuisineType = ["Indian", "French"];
+let /** {Array} */ cuisineType = ["Mexican", "Italian"];
 
 const /** {NodeList} */ $sliderSections = document.querySelectorAll("[data-slider-section]");
 
