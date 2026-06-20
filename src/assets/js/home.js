@@ -126,7 +126,7 @@ const addTabContent = ($currentTabBtn, $currentTabPanel) => {
 
       $card.innerHTML = `
             <figure class="card-media img-holder">
-            <img src="${image}" loading="lazy" alt="${title}">
+            <img src="${image}" width="195" height="195" loading="lazy" alt="${title}" class="img-cover">
           </figure>
 
           <div class="card-body">
@@ -166,7 +166,7 @@ addTabContent($lastActiveTabBtn, $lastActiveTabPanel);
  * Fetch data for slider card
  */
 
-let /** {Array} */ cuisineType = ["Mexican", "Italian"];
+let /** {Array} */ cuisineType = ["Italian", "Mexican"];
 
 const /** {NodeList} */ $sliderSections = document.querySelectorAll("[data-slider-section]");
 
@@ -213,7 +213,7 @@ for (const [index, $sliderSection] of $sliderSections.entries()) {
                 <div class="card">
 
                 <figure class="card-media img-holder">
-                <img src="${image}" loading="lazy" alt="${title}">
+                <img src="${image}" width="195" height="195" loading="lazy" alt="${title}" class="img-cover">
               </figure>
     
               <div class="card-body">
