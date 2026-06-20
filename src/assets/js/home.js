@@ -12,7 +12,7 @@ const /**{NodeElement}*/ $searchField = document.querySelector("[data-search-fie
 const /** {NodeElement} */ $searchBtn = document.querySelector("[data-search-btn]");
 
 $searchBtn.addEventListener("click", function () {
-  if ($searchField.value) window.location = `/recipes.html?q=${$searchField.value}`;
+  if ($searchField.value) window.location = `./recipes.html?q=${$searchField.value}`;
 });
 
 /**
